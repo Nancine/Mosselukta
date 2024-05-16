@@ -1,0 +1,72 @@
+@font-face { font-family: cuomotype; src: url('cuomotype.ttf'); }
+body, html {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #65755c;
+    font-family: 'cuomotype', sans-serif;
+}
+
+  
+.container {
+    text-align: center;
+}
+
+#start-button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    color: #000;
+    background-color: #5f7a50;
+    text-decoration: none;
+}
+
+h1 {
+    padding-bottom: 10%;
+    color: #0b1f00;
+    
+}
+h2 {
+    padding-bottom: 5%;
+    color: #397217;
+
+    
+}
+h1 .container{
+    display: flex;
+    
+}
+
+.paragraphs {
+    padding-bottom: 5%;
+}
+
+.paragraphs2 {
+    padding-top: 5%;
+}
+
+#dotter-text {
+    font-size: 24px;
+}
+
+#loading-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dot {
+    display: inline-block;
+    opacity: 0;
+    animation: loadingDots 2s infinite;
+  }
+  
+  @keyframes loadingDots {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
